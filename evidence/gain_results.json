@@ -1,0 +1,735 @@
+{
+  "status": "COMPLETE_VERIFIED",
+  "utc": "2026-10-15T04:32:22.692351+00:00",
+  "scope": "Expanded ACT demonstrations and scaled ACT residual GRPO; frozen WorldGym-feature hybrid policy selection",
+  "success_definition": "Official first success at .2s boundaries, unchanged height+contact predicate",
+  "n_final_scenes": 100,
+  "selections": {
+    "WorldGym_visual": "FT40_s5101_step10000",
+    "noWorldGym_visual": "FT20_s5102_step5000",
+    "noWorldGym_initial_action": "MuJoCo_s5102_g16",
+    "MuJoCo_development": "FT20_s5101_step5000",
+    "WorldGym_10demo_only": "original_ACT"
+  },
+  "fixed_training_baseline": "FT40_s5101_step10000",
+  "final_policies": [
+    {
+      "candidate": "original_ACT",
+      "successes": 78,
+      "n": 100,
+      "success_rate": 0.78,
+      "wilson95": [
+        0.6892964648501421,
+        0.8499871761539459
+      ],
+      "demos": 10,
+      "family": "original",
+      "actual_rollout_seconds": 678.3475768566132
+    },
+    {
+      "candidate": "previous_MVP_selected",
+      "successes": 79,
+      "n": 100,
+      "success_rate": 0.79,
+      "wilson95": [
+        0.7002003116591013,
+        0.858343459380847
+      ],
+      "demos": 10,
+      "family": "prior_MuJoCo_GRPO",
+      "actual_rollout_seconds": 660.4419193267822
+    },
+    {
+      "candidate": "FT40_s5101_step10000",
+      "successes": 94,
+      "n": 100,
+      "success_rate": 0.94,
+      "wilson95": [
+        0.8752318455410406,
+        0.9722138760368118
+      ],
+      "demos": 40,
+      "family": "SFT",
+      "actual_rollout_seconds": 562.3082251548767
+    },
+    {
+      "candidate": "FT20_s5102_step5000",
+      "successes": 93,
+      "n": 100,
+      "success_rate": 0.93,
+      "wilson95": [
+        0.8625048526092651,
+        0.9656807389327273
+      ],
+      "demos": 20,
+      "family": "SFT",
+      "actual_rollout_seconds": 594.6890585422516
+    },
+    {
+      "candidate": "MuJoCo_s5102_g16",
+      "successes": 41,
+      "n": 100,
+      "success_rate": 0.41,
+      "wilson95": [
+        0.3186731302113651,
+        0.5079856994658921
+      ],
+      "demos": 10,
+      "family": "GRPO",
+      "actual_rollout_seconds": 1102.3431088924408
+    },
+    {
+      "candidate": "FT20_s5101_step5000",
+      "successes": 94,
+      "n": 100,
+      "success_rate": 0.94,
+      "wilson95": [
+        0.8752318455410406,
+        0.9722138760368118
+      ],
+      "demos": 20,
+      "family": "SFT",
+      "actual_rollout_seconds": 561.3143713474274
+    },
+    {
+      "candidate": "reference_ACT80",
+      "successes": 100,
+      "n": 100,
+      "success_rate": 1.0,
+      "wilson95": [
+        0.9630065017930143,
+        1.0
+      ],
+      "demos": 80,
+      "family": "existing_reference",
+      "actual_rollout_seconds": 557.747008562088
+    }
+  ],
+  "comparisons": {
+    "WorldGym_vs_original": {
+      "difference": 0.16,
+      "gains": 20,
+      "harms": 4,
+      "paired_bootstrap95": [
+        0.07,
+        0.25
+      ],
+      "exact_McNemar_two_sided": 0.001543879508972168,
+      "bootstrap_replicates": 20000
+    },
+    "WorldGym_vs_previous_selected": {
+      "difference": 0.15,
+      "gains": 19,
+      "harms": 4,
+      "paired_bootstrap95": [
+        0.06,
+        0.24
+      ],
+      "exact_McNemar_two_sided": 0.002599477767944336,
+      "bootstrap_replicates": 20000
+    },
+    "WorldGym10_vs_original": {
+      "difference": 0.0,
+      "gains": 0,
+      "harms": 0,
+      "paired_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "exact_McNemar_two_sided": 1.0,
+      "bootstrap_replicates": 20000
+    },
+    "WorldGym_vs_fixed_FT40": {
+      "difference": 0.0,
+      "gains": 0,
+      "harms": 0,
+      "paired_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "exact_McNemar_two_sided": 1.0,
+      "bootstrap_replicates": 20000
+    },
+    "WorldGym_vs_noWorldGym_visual": {
+      "difference": 0.01,
+      "gains": 6,
+      "harms": 5,
+      "paired_bootstrap95": [
+        -0.05,
+        0.08
+      ],
+      "exact_McNemar_two_sided": 1.0,
+      "bootstrap_replicates": 20000
+    },
+    "WorldGym_vs_noWorldGym_initial_action": {
+      "difference": 0.53,
+      "gains": 57,
+      "harms": 4,
+      "paired_bootstrap95": [
+        0.42,
+        0.64
+      ],
+      "exact_McNemar_two_sided": 4.85494457136415e-13,
+      "bootstrap_replicates": 20000
+    },
+    "WorldGym_vs_MuJoCo_development": {
+      "difference": 0.0,
+      "gains": 4,
+      "harms": 4,
+      "paired_bootstrap95": [
+        -0.06,
+        0.05
+      ],
+      "exact_McNemar_two_sided": 1.0,
+      "bootstrap_replicates": 20000
+    }
+  },
+  "stage_wall_seconds": {
+    "initial_and_cpu_checks": 55.035412073135376,
+    "sft_pilot": 25.026814222335815,
+    "rollout_pilot": 80.05040764808655,
+    "early_stop_semantics": 45.03836178779602,
+    "training_freeze": 40.02960205078125,
+    "sft_10_5101": 775.2983317375183,
+    "sft_10_5102": 640.2429053783417,
+    "sft_20_5101": 385.149653673172,
+    "sft_20_5102": 380.1600489616394,
+    "sft_40_5101": 390.1559863090515,
+    "sft_40_5102": 385.14947390556335,
+    "rl_MuJoCo": 1275.4716520309448,
+    "rl_noWorldGym": 730.3162162303925,
+    "rl_WorldGym": 1285.4940860271454,
+    "bank_freeze": 10.024042844772339,
+    "training_recompute_CPU": 29.66174840927124,
+    "selection_WorldGym": 5188.153861761093,
+    "selection_noWorldGym": 2951.2586839199066,
+    "selection_MuJoCo": 3686.374077796936,
+    "final_freeze": 10.021414995193481,
+    "final100": 4741.777010202408
+  },
+  "queue_seconds": 290.35377502441406,
+  "elapsed_budget_seconds": 23638.24682712555,
+  "budget_seconds": 43200,
+  "within_budget": true,
+  "data_coverage": {
+    "10": {
+      "demos": 10,
+      "slots_seen": 7,
+      "slot_counts": {
+        "3": 1,
+        "8": 2,
+        "4": 2,
+        "6": 2,
+        "7": 1,
+        "9": 1,
+        "1": 1
+      },
+      "records": [
+        {
+          "episode": 16,
+          "slot": 3
+        },
+        {
+          "episode": 17,
+          "slot": 8
+        },
+        {
+          "episode": 97,
+          "slot": 4
+        },
+        {
+          "episode": 10,
+          "slot": 6
+        },
+        {
+          "episode": 91,
+          "slot": 7
+        },
+        {
+          "episode": 31,
+          "slot": 4
+        },
+        {
+          "episode": 12,
+          "slot": 6
+        },
+        {
+          "episode": 64,
+          "slot": 8
+        },
+        {
+          "episode": 84,
+          "slot": 9
+        },
+        {
+          "episode": 55,
+          "slot": 1
+        }
+      ],
+      "slot_assignment": "Existing fit-trained RGB initializer, for descriptive training-coverage audit only"
+    },
+    "20": {
+      "demos": 20,
+      "slots_seen": 10,
+      "slot_counts": {
+        "3": 1,
+        "8": 3,
+        "4": 3,
+        "6": 2,
+        "7": 2,
+        "9": 3,
+        "1": 3,
+        "0": 1,
+        "5": 1,
+        "2": 1
+      },
+      "records": [
+        {
+          "episode": 16,
+          "slot": 3
+        },
+        {
+          "episode": 17,
+          "slot": 8
+        },
+        {
+          "episode": 97,
+          "slot": 4
+        },
+        {
+          "episode": 10,
+          "slot": 6
+        },
+        {
+          "episode": 91,
+          "slot": 7
+        },
+        {
+          "episode": 31,
+          "slot": 4
+        },
+        {
+          "episode": 12,
+          "slot": 6
+        },
+        {
+          "episode": 64,
+          "slot": 8
+        },
+        {
+          "episode": 84,
+          "slot": 9
+        },
+        {
+          "episode": 55,
+          "slot": 1
+        },
+        {
+          "episode": 46,
+          "slot": 4
+        },
+        {
+          "episode": 76,
+          "slot": 9
+        },
+        {
+          "episode": 75,
+          "slot": 0
+        },
+        {
+          "episode": 19,
+          "slot": 1
+        },
+        {
+          "episode": 88,
+          "slot": 1
+        },
+        {
+          "episode": 44,
+          "slot": 5
+        },
+        {
+          "episode": 25,
+          "slot": 7
+        },
+        {
+          "episode": 51,
+          "slot": 2
+        },
+        {
+          "episode": 70,
+          "slot": 8
+        },
+        {
+          "episode": 35,
+          "slot": 9
+        }
+      ],
+      "slot_assignment": "Existing fit-trained RGB initializer, for descriptive training-coverage audit only"
+    },
+    "40": {
+      "demos": 40,
+      "slots_seen": 10,
+      "slot_counts": {
+        "3": 4,
+        "8": 6,
+        "4": 5,
+        "6": 3,
+        "7": 3,
+        "9": 6,
+        "1": 3,
+        "0": 4,
+        "5": 3,
+        "2": 3
+      },
+      "records": [
+        {
+          "episode": 16,
+          "slot": 3
+        },
+        {
+          "episode": 17,
+          "slot": 8
+        },
+        {
+          "episode": 97,
+          "slot": 4
+        },
+        {
+          "episode": 10,
+          "slot": 6
+        },
+        {
+          "episode": 91,
+          "slot": 7
+        },
+        {
+          "episode": 31,
+          "slot": 4
+        },
+        {
+          "episode": 12,
+          "slot": 6
+        },
+        {
+          "episode": 64,
+          "slot": 8
+        },
+        {
+          "episode": 84,
+          "slot": 9
+        },
+        {
+          "episode": 55,
+          "slot": 1
+        },
+        {
+          "episode": 46,
+          "slot": 4
+        },
+        {
+          "episode": 76,
+          "slot": 9
+        },
+        {
+          "episode": 75,
+          "slot": 0
+        },
+        {
+          "episode": 19,
+          "slot": 1
+        },
+        {
+          "episode": 88,
+          "slot": 1
+        },
+        {
+          "episode": 44,
+          "slot": 5
+        },
+        {
+          "episode": 25,
+          "slot": 7
+        },
+        {
+          "episode": 51,
+          "slot": 2
+        },
+        {
+          "episode": 70,
+          "slot": 8
+        },
+        {
+          "episode": 35,
+          "slot": 9
+        },
+        {
+          "episode": 73,
+          "slot": 5
+        },
+        {
+          "episode": 47,
+          "slot": 0
+        },
+        {
+          "episode": 48,
+          "slot": 0
+        },
+        {
+          "episode": 29,
+          "slot": 4
+        },
+        {
+          "episode": 74,
+          "slot": 9
+        },
+        {
+          "episode": 85,
+          "slot": 8
+        },
+        {
+          "episode": 14,
+          "slot": 0
+        },
+        {
+          "episode": 15,
+          "slot": 4
+        },
+        {
+          "episode": 2,
+          "slot": 8
+        },
+        {
+          "episode": 3,
+          "slot": 2
+        },
+        {
+          "episode": 33,
+          "slot": 7
+        },
+        {
+          "episode": 72,
+          "slot": 5
+        },
+        {
+          "episode": 9,
+          "slot": 3
+        },
+        {
+          "episode": 22,
+          "slot": 3
+        },
+        {
+          "episode": 57,
+          "slot": 3
+        },
+        {
+          "episode": 8,
+          "slot": 9
+        },
+        {
+          "episode": 60,
+          "slot": 8
+        },
+        {
+          "episode": 52,
+          "slot": 2
+        },
+        {
+          "episode": 18,
+          "slot": 9
+        },
+        {
+          "episode": 69,
+          "slot": 6
+        }
+      ],
+      "slot_assignment": "Existing fit-trained RGB initializer, for descriptive training-coverage audit only"
+    }
+  },
+  "training_artifact_checks": {
+    "status": "PASS_TRAINING_ARTIFACT_RECOMPUTATION",
+    "independent_audit": false,
+    "new_environment_rollouts": false,
+    "sft": [
+      {
+        "demos": 10,
+        "seed": 5101,
+        "optimizer_steps": 10000,
+        "snapshots": [
+          {
+            "step": 5000,
+            "normalization_unchanged": true,
+            "changed_model_tensors": 153
+          },
+          {
+            "step": 10000,
+            "normalization_unchanged": true,
+            "changed_model_tensors": 153
+          }
+        ]
+      },
+      {
+        "demos": 10,
+        "seed": 5102,
+        "optimizer_steps": 10000,
+        "snapshots": [
+          {
+            "step": 5000,
+            "normalization_unchanged": true,
+            "changed_model_tensors": 153
+          },
+          {
+            "step": 10000,
+            "normalization_unchanged": true,
+            "changed_model_tensors": 153
+          }
+        ]
+      },
+      {
+        "demos": 20,
+        "seed": 5101,
+        "optimizer_steps": 10000,
+        "snapshots": [
+          {
+            "step": 5000,
+            "normalization_unchanged": true,
+            "changed_model_tensors": 153
+          },
+          {
+            "step": 10000,
+            "normalization_unchanged": true,
+            "changed_model_tensors": 153
+          }
+        ]
+      },
+      {
+        "demos": 20,
+        "seed": 5102,
+        "optimizer_steps": 10000,
+        "snapshots": [
+          {
+            "step": 5000,
+            "normalization_unchanged": true,
+            "changed_model_tensors": 153
+          },
+          {
+            "step": 10000,
+            "normalization_unchanged": true,
+            "changed_model_tensors": 153
+          }
+        ]
+      },
+      {
+        "demos": 40,
+        "seed": 5101,
+        "optimizer_steps": 10000,
+        "snapshots": [
+          {
+            "step": 5000,
+            "normalization_unchanged": true,
+            "changed_model_tensors": 153
+          },
+          {
+            "step": 10000,
+            "normalization_unchanged": true,
+            "changed_model_tensors": 153
+          }
+        ]
+      },
+      {
+        "demos": 40,
+        "seed": 5102,
+        "optimizer_steps": 10000,
+        "snapshots": [
+          {
+            "step": 5000,
+            "normalization_unchanged": true,
+            "changed_model_tensors": 153
+          },
+          {
+            "step": 10000,
+            "normalization_unchanged": true,
+            "changed_model_tensors": 153
+          }
+        ]
+      }
+    ],
+    "rl": [
+      {
+        "arm": "MuJoCo",
+        "seed": 5101,
+        "groups": 16,
+        "max_update_error": 0.0,
+        "candidate_groups_bitwise_equal": [
+          8,
+          16
+        ]
+      },
+      {
+        "arm": "MuJoCo",
+        "seed": 5102,
+        "groups": 16,
+        "max_update_error": 0.0,
+        "candidate_groups_bitwise_equal": [
+          8,
+          16
+        ]
+      },
+      {
+        "arm": "noWorldGym",
+        "seed": 5101,
+        "groups": 16,
+        "max_update_error": 0.0,
+        "candidate_groups_bitwise_equal": [
+          8,
+          16
+        ]
+      },
+      {
+        "arm": "noWorldGym",
+        "seed": 5102,
+        "groups": 16,
+        "max_update_error": 0.0,
+        "candidate_groups_bitwise_equal": [
+          8,
+          16
+        ]
+      },
+      {
+        "arm": "WorldGym",
+        "seed": 5101,
+        "groups": 16,
+        "max_update_error": 0.0,
+        "candidate_groups_bitwise_equal": [
+          8,
+          16
+        ]
+      },
+      {
+        "arm": "WorldGym",
+        "seed": 5102,
+        "groups": 16,
+        "max_update_error": 0.0,
+        "candidate_groups_bitwise_equal": [
+          8,
+          16
+        ]
+      }
+    ],
+    "groups_replayed": 96,
+    "optimizer_steps_replayed": 352,
+    "nonzero_parameter_change_groups": 88,
+    "residual_checkpoints_bitwise_equal": 12,
+    "seconds": 29.66174840927124
+  },
+  "input_provenance_timing": "2026-10-14T22:27:44.074644+00:00",
+  "input_snapshot_after_training_started": true,
+  "protocol_field_clarifications": "PROTOCOL_FIELD_CLARIFICATIONS.json",
+  "interpretation": {
+    "final_bank_coverage": "Selected and prespecified references only; not a full test ranking of all candidates",
+    "worldgym": "WorldGym-feature learned-state CAD hybrid, not native RGB World-Gymnast reproduction",
+    "causal": "Expanded-data gains and WorldGym selection gains are distinct",
+    "generalization": "One local MuJoCo task, no real-robot or cross-task claim"
+  }
+}

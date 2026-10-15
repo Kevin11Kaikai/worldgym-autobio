@@ -1,0 +1,357 @@
+{
+  "status": "COMPLETE_ALL_36_FRESH_MODEL_PREDICTIONS",
+  "rows": [
+    {
+      "arm": "base",
+      "seed": 1374421543,
+      "intervention": "policy_replay",
+      "prediction_MAE": 0.07362273335456848,
+      "static_initial_prediction_MAE": 0.08288191258907318,
+      "native_motion": 0.07983569800853729,
+      "physical_success": false
+    },
+    {
+      "arm": "base",
+      "seed": 1374421543,
+      "intervention": "hold_initial",
+      "prediction_MAE": 0.043572377413511276,
+      "static_initial_prediction_MAE": 2.6988505851477385e-05,
+      "native_motion": 0.04358159005641937,
+      "physical_success": false,
+      "action_effect_error": 0.08503445237874985
+    },
+    {
+      "arm": "base",
+      "seed": 1374421543,
+      "intervention": "reverse_gripper",
+      "prediction_MAE": 0.07112064212560654,
+      "static_initial_prediction_MAE": 0.08070516586303711,
+      "native_motion": 0.07150489836931229,
+      "physical_success": false,
+      "action_effect_error": 0.059128012508153915
+    },
+    {
+      "arm": "base",
+      "seed": 1361218571,
+      "intervention": "policy_replay",
+      "prediction_MAE": 0.09252467006444931,
+      "static_initial_prediction_MAE": 0.09048518538475037,
+      "native_motion": 0.02617047168314457,
+      "physical_success": false
+    },
+    {
+      "arm": "base",
+      "seed": 1361218571,
+      "intervention": "hold_initial",
+      "prediction_MAE": 0.05588390305638313,
+      "static_initial_prediction_MAE": 8.40858556330204e-05,
+      "native_motion": 0.05589505285024643,
+      "physical_success": false,
+      "action_effect_error": 0.12403013557195663
+    },
+    {
+      "arm": "base",
+      "seed": 1361218571,
+      "intervention": "reverse_gripper",
+      "prediction_MAE": 0.0987534373998642,
+      "static_initial_prediction_MAE": 0.09033501148223877,
+      "native_motion": 0.05591735243797302,
+      "physical_success": false,
+      "action_effect_error": 0.06691638380289078
+    },
+    {
+      "arm": "base",
+      "seed": 1314187170,
+      "intervention": "policy_replay",
+      "prediction_MAE": 0.06663011759519577,
+      "static_initial_prediction_MAE": 0.09975886344909668,
+      "native_motion": 0.0885946974158287,
+      "physical_success": false
+    },
+    {
+      "arm": "base",
+      "seed": 1314187170,
+      "intervention": "hold_initial",
+      "prediction_MAE": 0.07728448510169983,
+      "static_initial_prediction_MAE": 2.2987635020399466e-05,
+      "native_motion": 0.07728762179613113,
+      "physical_success": false,
+      "action_effect_error": 0.10766290128231049
+    },
+    {
+      "arm": "base",
+      "seed": 1314187170,
+      "intervention": "reverse_gripper",
+      "prediction_MAE": 0.06706762313842773,
+      "static_initial_prediction_MAE": 0.10050337016582489,
+      "native_motion": 0.08143701404333115,
+      "physical_success": false,
+      "action_effect_error": 0.06321530044078827
+    },
+    {
+      "arm": "base",
+      "seed": 1375859567,
+      "intervention": "policy_replay",
+      "prediction_MAE": 0.07555727660655975,
+      "static_initial_prediction_MAE": 0.09091220051050186,
+      "native_motion": 0.06625010073184967,
+      "physical_success": false
+    },
+    {
+      "arm": "base",
+      "seed": 1375859567,
+      "intervention": "hold_initial",
+      "prediction_MAE": 0.0607801228761673,
+      "static_initial_prediction_MAE": 5.536577009479515e-05,
+      "native_motion": 0.060790982097387314,
+      "physical_success": false,
+      "action_effect_error": 0.09480283409357071
+    },
+    {
+      "arm": "base",
+      "seed": 1375859567,
+      "intervention": "reverse_gripper",
+      "prediction_MAE": 0.06966175884008408,
+      "static_initial_prediction_MAE": 0.0776919350028038,
+      "native_motion": 0.06404091417789459,
+      "physical_success": false,
+      "action_effect_error": 0.051277536898851395
+    },
+    {
+      "arm": "replay",
+      "seed": 1374421543,
+      "intervention": "policy_replay",
+      "prediction_MAE": 0.07181277126073837,
+      "static_initial_prediction_MAE": 0.08288191258907318,
+      "native_motion": 0.07709301263093948,
+      "physical_success": false
+    },
+    {
+      "arm": "replay",
+      "seed": 1374421543,
+      "intervention": "hold_initial",
+      "prediction_MAE": 0.055703356862068176,
+      "static_initial_prediction_MAE": 2.6988505851477385e-05,
+      "native_motion": 0.05571328476071358,
+      "physical_success": false,
+      "action_effect_error": 0.08817436546087265
+    },
+    {
+      "arm": "replay",
+      "seed": 1374421543,
+      "intervention": "reverse_gripper",
+      "prediction_MAE": 0.07897430658340454,
+      "static_initial_prediction_MAE": 0.08070516586303711,
+      "native_motion": 0.05046723037958145,
+      "physical_success": false,
+      "action_effect_error": 0.0765460804104805
+    },
+    {
+      "arm": "replay",
+      "seed": 1361218571,
+      "intervention": "policy_replay",
+      "prediction_MAE": 0.0909763053059578,
+      "static_initial_prediction_MAE": 0.09048518538475037,
+      "native_motion": 0.026748672127723694,
+      "physical_success": false
+    },
+    {
+      "arm": "replay",
+      "seed": 1361218571,
+      "intervention": "hold_initial",
+      "prediction_MAE": 0.05290162190794945,
+      "static_initial_prediction_MAE": 8.40858556330204e-05,
+      "native_motion": 0.0529099740087986,
+      "physical_success": false,
+      "action_effect_error": 0.12265117466449738
+    },
+    {
+      "arm": "replay",
+      "seed": 1361218571,
+      "intervention": "reverse_gripper",
+      "prediction_MAE": 0.09457705169916153,
+      "static_initial_prediction_MAE": 0.09033501148223877,
+      "native_motion": 0.05496383085846901,
+      "physical_success": false,
+      "action_effect_error": 0.06428589671850204
+    },
+    {
+      "arm": "replay",
+      "seed": 1314187170,
+      "intervention": "policy_replay",
+      "prediction_MAE": 0.06078974902629852,
+      "static_initial_prediction_MAE": 0.09975886344909668,
+      "native_motion": 0.08537396043539047,
+      "physical_success": false
+    },
+    {
+      "arm": "replay",
+      "seed": 1314187170,
+      "intervention": "hold_initial",
+      "prediction_MAE": 0.036248307675123215,
+      "static_initial_prediction_MAE": 2.2987635020399466e-05,
+      "native_motion": 0.03625220060348511,
+      "physical_success": false,
+      "action_effect_error": 0.07209986448287964
+    },
+    {
+      "arm": "replay",
+      "seed": 1314187170,
+      "intervention": "reverse_gripper",
+      "prediction_MAE": 0.09988537430763245,
+      "static_initial_prediction_MAE": 0.10050337016582489,
+      "native_motion": 0.03702917322516441,
+      "physical_success": false,
+      "action_effect_error": 0.09273585677146912
+    },
+    {
+      "arm": "replay",
+      "seed": 1375859567,
+      "intervention": "policy_replay",
+      "prediction_MAE": 0.07682791352272034,
+      "static_initial_prediction_MAE": 0.09091220051050186,
+      "native_motion": 0.06275905668735504,
+      "physical_success": false
+    },
+    {
+      "arm": "replay",
+      "seed": 1375859567,
+      "intervention": "hold_initial",
+      "prediction_MAE": 0.05160650238394737,
+      "static_initial_prediction_MAE": 5.536577009479515e-05,
+      "native_motion": 0.05162382870912552,
+      "physical_success": false,
+      "action_effect_error": 0.09126686304807663
+    },
+    {
+      "arm": "replay",
+      "seed": 1375859567,
+      "intervention": "reverse_gripper",
+      "prediction_MAE": 0.0734560415148735,
+      "static_initial_prediction_MAE": 0.0776919350028038,
+      "native_motion": 0.05308203026652336,
+      "physical_success": false,
+      "action_effect_error": 0.05137437582015991
+    },
+    {
+      "arm": "holdmix",
+      "seed": 1374421543,
+      "intervention": "policy_replay",
+      "prediction_MAE": 0.08527670055627823,
+      "static_initial_prediction_MAE": 0.08288191258907318,
+      "native_motion": 0.020730677992105484,
+      "physical_success": false
+    },
+    {
+      "arm": "holdmix",
+      "seed": 1374421543,
+      "intervention": "hold_initial",
+      "prediction_MAE": 0.019256355240941048,
+      "static_initial_prediction_MAE": 2.6988505851477385e-05,
+      "native_motion": 0.01925869844853878,
+      "physical_success": false,
+      "action_effect_error": 0.08347132802009583
+    },
+    {
+      "arm": "holdmix",
+      "seed": 1374421543,
+      "intervention": "reverse_gripper",
+      "prediction_MAE": 0.08350622653961182,
+      "static_initial_prediction_MAE": 0.08070516586303711,
+      "native_motion": 0.019755344837903976,
+      "physical_success": false,
+      "action_effect_error": 0.025578968226909637
+    },
+    {
+      "arm": "holdmix",
+      "seed": 1361218571,
+      "intervention": "policy_replay",
+      "prediction_MAE": 0.0929444208741188,
+      "static_initial_prediction_MAE": 0.09048518538475037,
+      "native_motion": 0.020879529416561127,
+      "physical_success": false
+    },
+    {
+      "arm": "holdmix",
+      "seed": 1361218571,
+      "intervention": "hold_initial",
+      "prediction_MAE": 0.025388900190591812,
+      "static_initial_prediction_MAE": 8.40858556330204e-05,
+      "native_motion": 0.02537674270570278,
+      "physical_success": false,
+      "action_effect_error": 0.09862177073955536
+    },
+    {
+      "arm": "holdmix",
+      "seed": 1361218571,
+      "intervention": "reverse_gripper",
+      "prediction_MAE": 0.09158797562122345,
+      "static_initial_prediction_MAE": 0.09033501148223877,
+      "native_motion": 0.024877233430743217,
+      "physical_success": false,
+      "action_effect_error": 0.03632325679063797
+    },
+    {
+      "arm": "holdmix",
+      "seed": 1314187170,
+      "intervention": "policy_replay",
+      "prediction_MAE": 0.06226398050785065,
+      "static_initial_prediction_MAE": 0.09975886344909668,
+      "native_motion": 0.08295271545648575,
+      "physical_success": false
+    },
+    {
+      "arm": "holdmix",
+      "seed": 1314187170,
+      "intervention": "hold_initial",
+      "prediction_MAE": 0.03389240428805351,
+      "static_initial_prediction_MAE": 2.2987635020399466e-05,
+      "native_motion": 0.03389456868171692,
+      "physical_success": false,
+      "action_effect_error": 0.07301004230976105
+    },
+    {
+      "arm": "holdmix",
+      "seed": 1314187170,
+      "intervention": "reverse_gripper",
+      "prediction_MAE": 0.1041271761059761,
+      "static_initial_prediction_MAE": 0.10050337016582489,
+      "native_motion": 0.033906787633895874,
+      "physical_success": false,
+      "action_effect_error": 0.09694656729698181
+    },
+    {
+      "arm": "holdmix",
+      "seed": 1375859567,
+      "intervention": "policy_replay",
+      "prediction_MAE": 0.08040548115968704,
+      "static_initial_prediction_MAE": 0.09091220051050186,
+      "native_motion": 0.049878451973199844,
+      "physical_success": false
+    },
+    {
+      "arm": "holdmix",
+      "seed": 1375859567,
+      "intervention": "hold_initial",
+      "prediction_MAE": 0.05218859761953354,
+      "static_initial_prediction_MAE": 5.536577009479515e-05,
+      "native_motion": 0.05220234766602516,
+      "physical_success": false,
+      "action_effect_error": 0.09799239039421082
+    },
+    {
+      "arm": "holdmix",
+      "seed": 1375859567,
+      "intervention": "reverse_gripper",
+      "prediction_MAE": 0.073089599609375,
+      "static_initial_prediction_MAE": 0.0776919350028038,
+      "native_motion": 0.054197296500205994,
+      "physical_success": false,
+      "action_effect_error": 0.04680446535348892
+    }
+  ],
+  "utc": "2026-10-15T16:24:46.338220+00:00",
+  "protocol_sha256": "9696483978ca8febf99f89d792d06848895233c7fc28189749bbd2a8dff00218",
+  "new_confirmation_initial_states": 4,
+  "scope": "Native video prediction only; all models receive identical open-loop controls and initial RGB. No policy-success improvement is implied. Four initial states only; report every arm and intervention."
+}

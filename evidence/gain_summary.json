@@ -1,0 +1,25 @@
+{
+  "experiment_status": "COMPLETE_VERIFIED",
+  "primary": {
+    "difference": 0.16,
+    "gains": 20,
+    "harms": 4,
+    "paired_bootstrap95": [
+      0.07,
+      0.25
+    ],
+    "exact_McNemar_two_sided": 0.001543879508972168,
+    "bootstrap_replicates": 20000
+  },
+  "attribution": "More-data plus SFT route; WorldGym-specific selection or RL benefit not established",
+  "final_successes": {
+    "original_ACT": 78,
+    "previous_MVP_selected": 79,
+    "FT40_s5101_step10000": 94,
+    "FT20_s5102_step5000": 93,
+    "MuJoCo_s5102_g16": 41,
+    "FT20_s5101_step5000": 94,
+    "reference_ACT80": 100
+  },
+  "elapsed_budget_seconds": 23922.403846025467
+}

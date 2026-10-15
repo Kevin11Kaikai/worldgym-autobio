@@ -1,0 +1,226 @@
+{
+  "status": "COMPLETE_DIAGNOSTIC_SYNTHESIS",
+  "utc": "2026-10-15T19:11:05.813060+00:00",
+  "worldmodel_means": {
+    "base": {
+      "policy_replay": {
+        "prediction_MAE": 0.07708369940519333,
+        "static_initial_prediction_MAE": 0.09100954048335552,
+        "native_motion": 0.06521274195984006
+      },
+      "hold_initial": {
+        "prediction_MAE": 0.059380222111940384,
+        "static_initial_prediction_MAE": 4.73569416499231e-05,
+        "native_motion": 0.05938881170004606,
+        "action_effect_error": 0.10288258083164692
+      },
+      "reverse_gripper": {
+        "prediction_MAE": 0.07665086537599564,
+        "static_initial_prediction_MAE": 0.08730887062847614,
+        "native_motion": 0.06822504475712776,
+        "action_effect_error": 0.06013430841267109
+      }
+    },
+    "replay": {
+      "policy_replay": {
+        "prediction_MAE": 0.07510168477892876,
+        "static_initial_prediction_MAE": 0.09100954048335552,
+        "native_motion": 0.06299367547035217
+      },
+      "hold_initial": {
+        "prediction_MAE": 0.04911494720727205,
+        "static_initial_prediction_MAE": 4.73569416499231e-05,
+        "native_motion": 0.0491248220205307,
+        "action_effect_error": 0.09354806691408157
+      },
+      "reverse_gripper": {
+        "prediction_MAE": 0.086723193526268,
+        "static_initial_prediction_MAE": 0.08730887062847614,
+        "native_motion": 0.04888556618243456,
+        "action_effect_error": 0.0712355524301529
+      }
+    },
+    "holdmix": {
+      "policy_replay": {
+        "prediction_MAE": 0.08022264577448368,
+        "static_initial_prediction_MAE": 0.09100954048335552,
+        "native_motion": 0.04361034370958805
+      },
+      "hold_initial": {
+        "prediction_MAE": 0.03268156433477998,
+        "static_initial_prediction_MAE": 4.73569416499231e-05,
+        "native_motion": 0.03268308937549591,
+        "action_effect_error": 0.08827388286590576
+      },
+      "reverse_gripper": {
+        "prediction_MAE": 0.08807774446904659,
+        "static_initial_prediction_MAE": 0.08730887062847614,
+        "native_motion": 0.033184165600687265,
+        "action_effect_error": 0.051413314417004585
+      }
+    }
+  },
+  "worldmodel_holdmix_minus_replay_MAE": {
+    "policy_replay": 0.005120960995554924,
+    "hold_initial": -0.016433382872492075,
+    "reverse_gripper": 0.0013545509427785873
+  },
+  "pure_vae": {
+    "development": {
+      "codec_initial_MAE": 0.006099526770412922,
+      "codec_static_hold_prediction_MAE": 0.006111761904321611,
+      "raw_static_hold_prediction_MAE": 6.0728063090209616e-05
+    },
+    "model_confirmation": {
+      "codec_initial_MAE": 0.005843768827617168,
+      "codec_static_hold_prediction_MAE": 0.0058553400449454784,
+      "raw_static_hold_prediction_MAE": 4.73569416499231e-05
+    }
+  },
+  "raw_synthetic_rewards": {
+    "original": {
+      "blank": {
+        "n": 12,
+        "mean_raw_score": 0.6791787147521973,
+        "raw_yes": 12
+      },
+      "constant": {
+        "n": 12,
+        "mean_raw_score": 0.02931223064661026,
+        "raw_yes": 0
+      },
+      "conflicting": {
+        "n": 12,
+        "mean_raw_score": 0.08346517594569984,
+        "raw_yes": 1
+      }
+    },
+    "prompt_only": {
+      "blank": {
+        "n": 12,
+        "mean_raw_score": 0.2018132209777832,
+        "raw_yes": 0
+      },
+      "constant": {
+        "n": 12,
+        "mean_raw_score": 0.005220125894993544,
+        "raw_yes": 0
+      },
+      "conflicting": {
+        "n": 12,
+        "mean_raw_score": 0.010000417513462404,
+        "raw_yes": 0
+      }
+    },
+    "repaired": {
+      "blank": {
+        "n": 12,
+        "mean_raw_score": 1.760343138812459e-06,
+        "raw_yes": 0
+      },
+      "constant": {
+        "n": 12,
+        "mean_raw_score": 8.315280410897685e-07,
+        "raw_yes": 0
+      },
+      "conflicting": {
+        "n": 12,
+        "mean_raw_score": 3.554743018459779e-08,
+        "raw_yes": 0
+      }
+    }
+  },
+  "reward": {
+    "original": {
+      "n": 192,
+      "positive": 85,
+      "negative": 107,
+      "auc": 0.9659703133589884,
+      "balanced_accuracy": 0.9158878504672897,
+      "brier": 0.08618108272262427,
+      "false_positive": 18,
+      "false_negative": 0
+    },
+    "prompt_only": {
+      "n": 192,
+      "positive": 85,
+      "negative": 107,
+      "auc": 0.9151181968114348,
+      "balanced_accuracy": 0.8745464540956569,
+      "brier": 0.11879182908235116,
+      "false_positive": 13,
+      "false_negative": 11
+    },
+    "repaired": {
+      "n": 192,
+      "positive": 85,
+      "negative": 107,
+      "auc": 0.9520615722924683,
+      "balanced_accuracy": 0.8131390874106652,
+      "brier": 0.15098492141163683,
+      "false_positive": 6,
+      "false_negative": 27
+    }
+  },
+  "alignment": {
+    "original": {
+      "physical": {
+        "n": 96,
+        "positive": 1,
+        "negative": 95,
+        "auc": 1.0,
+        "balanced_accuracy": 0.968421052631579,
+        "brier": 0.05529588817554412,
+        "false_positive": 6,
+        "false_negative": 0
+      },
+      "native": {
+        "n": 96,
+        "positive": 1,
+        "negative": 95,
+        "auc": 0.7368421052631579,
+        "balanced_accuracy": 0.48947368421052634,
+        "brier": 0.0307212522232498,
+        "false_positive": 2,
+        "false_negative": 1
+      },
+      "mean_native_minus_physical": -0.007480136215235689,
+      "mean_absolute_native_physical_score_difference": 0.11375200398409409,
+      "guard_rejections": 0,
+      "positive_threshold_disagreement": 7
+    },
+    "repaired": {
+      "physical": {
+        "n": 96,
+        "positive": 1,
+        "negative": 95,
+        "auc": 1.0,
+        "balanced_accuracy": 1.0,
+        "brier": 0.003614145225300953,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "native": {
+        "n": 96,
+        "positive": 1,
+        "negative": 95,
+        "auc": 0.8631578947368421,
+        "balanced_accuracy": 0.5,
+        "brier": 0.010416030700431777,
+        "false_positive": 0,
+        "false_negative": 1
+      },
+      "mean_native_minus_physical": -0.010274747761706523,
+      "mean_absolute_native_physical_score_difference": 0.01032534961423807,
+      "guard_rejections": 0,
+      "positive_threshold_disagreement": 1
+    }
+  },
+  "limits": [
+    "Four model-confirmation initial states; descriptive prediction errors only.",
+    "One policy training seed; scene-paired intervals only.",
+    "12 reward-validation scenes with correlated frames; no reward refitting after validation.",
+    "Official simulator success and VLM confidence are different measurements."
+  ],
+  "costs_asof": "2026-10-15T19:11:05.809586+00:00"
+}

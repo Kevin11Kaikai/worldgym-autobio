@@ -1,0 +1,141 @@
+{
+  "wm_matched_pairs": [
+    {
+      "action": "hold_initial",
+      "metric": "prediction_MAE",
+      "replay_mean": 0.04911494720727205,
+      "holdmix_mean": 0.03268156433477998,
+      "mean_delta": -0.016433382872492075,
+      "improved": 3,
+      "worsened": 1,
+      "per_seed": [
+        {
+          "seed": 1374421543,
+          "delta": -0.03644700162112713
+        },
+        {
+          "seed": 1361218571,
+          "delta": -0.027512721717357635
+        },
+        {
+          "seed": 1314187170,
+          "delta": -0.002355903387069702
+        },
+        {
+          "seed": 1375859567,
+          "delta": 0.0005820952355861664
+        }
+      ]
+    },
+    {
+      "action": "policy_replay",
+      "metric": "prediction_MAE",
+      "replay_mean": 0.07510168477892876,
+      "holdmix_mean": 0.08022264577448368,
+      "mean_delta": 0.005120960995554924,
+      "improved": 0,
+      "worsened": 4,
+      "per_seed": [
+        {
+          "seed": 1374421543,
+          "delta": 0.013463929295539856
+        },
+        {
+          "seed": 1361218571,
+          "delta": 0.0019681155681610107
+        },
+        {
+          "seed": 1314187170,
+          "delta": 0.001474231481552124
+        },
+        {
+          "seed": 1375859567,
+          "delta": 0.0035775676369667053
+        }
+      ]
+    },
+    {
+      "action": "reverse_gripper",
+      "metric": "prediction_MAE",
+      "replay_mean": 0.086723193526268,
+      "holdmix_mean": 0.08807774446904659,
+      "mean_delta": 0.0013545509427785873,
+      "improved": 2,
+      "worsened": 2,
+      "per_seed": [
+        {
+          "seed": 1374421543,
+          "delta": 0.004531919956207275
+        },
+        {
+          "seed": 1361218571,
+          "delta": -0.00298907607793808
+        },
+        {
+          "seed": 1314187170,
+          "delta": 0.0042418017983436584
+        },
+        {
+          "seed": 1375859567,
+          "delta": -0.00036644190549850464
+        }
+      ]
+    },
+    {
+      "action": "hold_initial",
+      "metric": "action_effect_error",
+      "replay_mean": 0.09354806691408157,
+      "holdmix_mean": 0.08827388286590576,
+      "mean_delta": -0.005274184048175812,
+      "improved": 2,
+      "worsened": 2,
+      "per_seed": [
+        {
+          "seed": 1374421543,
+          "delta": -0.004703037440776825
+        },
+        {
+          "seed": 1361218571,
+          "delta": -0.024029403924942017
+        },
+        {
+          "seed": 1314187170,
+          "delta": 0.0009101778268814087
+        },
+        {
+          "seed": 1375859567,
+          "delta": 0.006725527346134186
+        }
+      ]
+    },
+    {
+      "action": "reverse_gripper",
+      "metric": "action_effect_error",
+      "replay_mean": 0.0712355524301529,
+      "holdmix_mean": 0.051413314417004585,
+      "mean_delta": -0.019822238013148308,
+      "improved": 3,
+      "worsened": 1,
+      "per_seed": [
+        {
+          "seed": 1374421543,
+          "delta": -0.05096711218357086
+        },
+        {
+          "seed": 1361218571,
+          "delta": -0.027962639927864075
+        },
+        {
+          "seed": 1314187170,
+          "delta": 0.004210710525512695
+        },
+        {
+          "seed": 1375859567,
+          "delta": -0.00456991046667099
+        }
+      ]
+    }
+  ],
+  "source_wm_results_sha256": "4e28a236afa8b0be177e414444c6af6a1d1715152fcabe93c1a67019a04da97e",
+  "scope": "Read complete saved evidence to clarify attribution and per-initial-state harm. No experiment/source/model/protocol changes and no rerun."
+}

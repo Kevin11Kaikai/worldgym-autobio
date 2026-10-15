@@ -1,0 +1,209 @@
+{
+  "created_utc": "2026-10-15T21:58:04.278071+00:00",
+  "purpose": "English research briefing; archived evidence, not new inference or training",
+  "reference_repository": {
+    "url": "https://github.com/Kevin11Kaikai/classifier-notebooks-undergraduate",
+    "commit": "2d580f1aacfa1287e0b15c45f07e68e7e312727e",
+    "adaptation": "Original lessons; pedagogical structure inspired by the reference repository. No notebook code or prose copied from that repository."
+  },
+  "files": [
+    {
+      "path": "evidence/gain_outcomes.csv",
+      "source_project_path": "experiments/worldgym_gain_12h_v1/FINAL_OUTCOMES.csv",
+      "source_sha256": "807e7fe3bdc868a5a1712cd683385bc587751f14512e6c6e240c731fc66db681",
+      "sha256": "807e7fe3bdc868a5a1712cd683385bc587751f14512e6c6e240c731fc66db681",
+      "transformation": "byte-identical copy",
+      "localization_parent_sha256": "807e7fe3bdc868a5a1712cd683385bc587751f14512e6c6e240c731fc66db681"
+    },
+    {
+      "path": "evidence/native_outcomes.csv",
+      "source_project_path": "experiments/worldgymnast_native_10h_v1/FINAL_OUTCOMES.csv",
+      "source_sha256": "75831291b79d7047eac8fcebb1acf1b040108cc2a90b6f39d5bc3c0fe6bfcaa0",
+      "sha256": "75831291b79d7047eac8fcebb1acf1b040108cc2a90b6f39d5bc3c0fe6bfcaa0",
+      "transformation": "byte-identical copy",
+      "localization_parent_sha256": "75831291b79d7047eac8fcebb1acf1b040108cc2a90b6f39d5bc3c0fe6bfcaa0"
+    },
+    {
+      "path": "evidence/repair_outcomes.csv",
+      "source_project_path": "experiments/worldgym_mvp_repair_8h_v1/FINAL_OUTCOMES.csv",
+      "source_sha256": "b19e95f88d2d5b2151d548bbd9c93ccb995b0a1c9bd0ee81061de342fa6f59d9",
+      "sha256": "b19e95f88d2d5b2151d548bbd9c93ccb995b0a1c9bd0ee81061de342fa6f59d9",
+      "transformation": "byte-identical copy",
+      "localization_parent_sha256": "b19e95f88d2d5b2151d548bbd9c93ccb995b0a1c9bd0ee81061de342fa6f59d9"
+    },
+    {
+      "path": "evidence/wm_results.json",
+      "source_project_path": "experiments/worldgym_mvp_repair_8h_v1/wm_repair/RESULTS.json",
+      "source_sha256": "4e28a236afa8b0be177e414444c6af6a1d1715152fcabe93c1a67019a04da97e",
+      "sha256": "4e28a236afa8b0be177e414444c6af6a1d1715152fcabe93c1a67019a04da97e",
+      "transformation": "byte-identical copy",
+      "localization_parent_sha256": "4e28a236afa8b0be177e414444c6af6a1d1715152fcabe93c1a67019a04da97e"
+    },
+    {
+      "path": "evidence/repair_results.json",
+      "source_project_path": "experiments/worldgym_mvp_repair_8h_v1/RESULTS.json",
+      "source_sha256": "f2c2a460ae14ef64c4aa777bfcf5b578bbcd6c3bbd0d91da2b61640788c2990a",
+      "sha256": "f2c2a460ae14ef64c4aa777bfcf5b578bbcd6c3bbd0d91da2b61640788c2990a",
+      "transformation": "byte-identical copy",
+      "localization_parent_sha256": "f2c2a460ae14ef64c4aa777bfcf5b578bbcd6c3bbd0d91da2b61640788c2990a"
+    },
+    {
+      "path": "evidence/native_summary.json",
+      "source_project_path": "experiments/worldgymnast_native_10h_v1/DELIVERY.json",
+      "source_sha256": "c6bd796fa7600852a76628a6c2b3c0b05ca758e1ed717eaaeff757a6efb1b141",
+      "sha256": "e79bb17a17063545021db2eedbd3b99139c11379b7966a23ad4abdd8e17e2569",
+      "transformation": "selected fields for portable teaching snapshot",
+      "localization_parent_sha256": "e79bb17a17063545021db2eedbd3b99139c11379b7966a23ad4abdd8e17e2569"
+    },
+    {
+      "path": "evidence/gain_summary.json",
+      "source_project_path": "experiments/worldgym_gain_12h_v1/DELIVERY.json",
+      "source_sha256": "203d9d61da51a7c9b2cbe06ecf71c8926ae08eb68be4a86aae826dc5b5870226",
+      "sha256": "00ae3648ddcfa6562e202a905e48c971ec73bbde8c3a5256e14a82975ddb4680",
+      "transformation": "selected fields for portable teaching snapshot",
+      "localization_parent_sha256": "00ae3648ddcfa6562e202a905e48c971ec73bbde8c3a5256e14a82975ddb4680"
+    },
+    {
+      "path": "evidence/wm_paired_summary.json",
+      "source_project_path": "experiments/worldgym_mvp_repair_8h_v1/checks/FINAL_REPORT_REVIEW.json",
+      "source_sha256": "ffb34770c43d22b48902a95b7e66019affb4f26ad939f21bfb2f7b12fb61ff28",
+      "sha256": "99873266ce7766caece9bf01fc5a78e2212af05f98f37c01286aa63ce5a1a809",
+      "transformation": "selected fields for portable teaching snapshot",
+      "localization_parent_sha256": "99873266ce7766caece9bf01fc5a78e2212af05f98f37c01286aa63ce5a1a809"
+    },
+    {
+      "path": "media/demos/policy_improvement.mp4",
+      "source_project_path": "experiments/worldgym_mvp_repair_8h_v1/illustrations/comparison_1_gain_keyframes.png",
+      "source_sha256": "b9bd69e0998ca2b91ee51324e958a43cbcc60d961fe37d301f6f85b151ccb874",
+      "sha256": "b7fb978b80c0ae1a7356fb0c5637691e2b53deacca307a07a0f20bb15a40f531",
+      "transformation": "byte-identical copy",
+      "localization_parent_sha256": "b9bd69e0998ca2b91ee51324e958a43cbcc60d961fe37d301f6f85b151ccb874"
+    },
+    {
+      "path": "media/demos/policy_regression.mp4",
+      "source_project_path": "experiments/worldgym_mvp_repair_8h_v1/illustrations/comparison_1_harm_keyframes.png",
+      "source_sha256": "3206f7f9ecaced1108e654913946f7a7f4fe7e15337f0ec11bf03596687837f3",
+      "sha256": "00b5f11b7b8abd75dae3adb956a69a22b1523c97fcf3b5792782c26a0f503146",
+      "transformation": "byte-identical copy",
+      "localization_parent_sha256": "3206f7f9ecaced1108e654913946f7a7f4fe7e15337f0ec11bf03596687837f3"
+    },
+    {
+      "path": "media/demos/world_model_static.mp4",
+      "source_project_path": "experiments/worldgym_mvp_repair_8h_v1/illustrations/wm_fresh_1374421543_hold_initial_keyframes.png",
+      "source_sha256": "ba9008da1e48b2c21f65414a7b195ac489aeabd3e75fc453d1c524d61031a808",
+      "sha256": "fcd800bbaf4037e0a487adb52172bbe3dcb7adc66d890c584e0487a715633d0b",
+      "transformation": "byte-identical copy",
+      "localization_parent_sha256": "ba9008da1e48b2c21f65414a7b195ac489aeabd3e75fc453d1c524d61031a808"
+    },
+    {
+      "path": "media/demos/world_model_motion.mp4",
+      "source_project_path": "experiments/worldgym_mvp_repair_8h_v1/illustrations/wm_fresh_1374421543_policy_replay_keyframes.png",
+      "source_sha256": "0b4cb77ca36e792b02cf7cb89f1b25acc0d888bd2ae0d6403da315e63c03355f",
+      "sha256": "e166f7d64b084331e427945bd3dedf5735309201c91e58606eb93656cc434608",
+      "transformation": "byte-identical copy",
+      "localization_parent_sha256": "0b4cb77ca36e792b02cf7cb89f1b25acc0d888bd2ae0d6403da315e63c03355f"
+    },
+    {
+      "path": "media/demos/policy_improvement.mp4",
+      "source_project_path": "experiments/worldgym_mvp_repair_8h_v1/illustrations/comparison_1_gain.mp4",
+      "source_sha256": "b7fb978b80c0ae1a7356fb0c5637691e2b53deacca307a07a0f20bb15a40f531",
+      "sha256": "b7fb978b80c0ae1a7356fb0c5637691e2b53deacca307a07a0f20bb15a40f531",
+      "transformation": "byte-identical copy",
+      "localization_parent_sha256": "b7fb978b80c0ae1a7356fb0c5637691e2b53deacca307a07a0f20bb15a40f531"
+    },
+    {
+      "path": "media/demos/policy_regression.mp4",
+      "source_project_path": "experiments/worldgym_mvp_repair_8h_v1/illustrations/comparison_1_harm.mp4",
+      "source_sha256": "00b5f11b7b8abd75dae3adb956a69a22b1523c97fcf3b5792782c26a0f503146",
+      "sha256": "00b5f11b7b8abd75dae3adb956a69a22b1523c97fcf3b5792782c26a0f503146",
+      "transformation": "byte-identical copy",
+      "localization_parent_sha256": "00b5f11b7b8abd75dae3adb956a69a22b1523c97fcf3b5792782c26a0f503146"
+    },
+    {
+      "path": "media/demos/world_model_static.mp4",
+      "source_project_path": "experiments/worldgym_mvp_repair_8h_v1/illustrations/wm_fresh_1374421543_hold_initial.mp4",
+      "source_sha256": "fcd800bbaf4037e0a487adb52172bbe3dcb7adc66d890c584e0487a715633d0b",
+      "sha256": "fcd800bbaf4037e0a487adb52172bbe3dcb7adc66d890c584e0487a715633d0b",
+      "transformation": "byte-identical copy",
+      "localization_parent_sha256": "fcd800bbaf4037e0a487adb52172bbe3dcb7adc66d890c584e0487a715633d0b"
+    },
+    {
+      "path": "media/demos/world_model_motion.mp4",
+      "source_project_path": "experiments/worldgym_mvp_repair_8h_v1/illustrations/wm_fresh_1374421543_policy_replay.mp4",
+      "source_sha256": "e166f7d64b084331e427945bd3dedf5735309201c91e58606eb93656cc434608",
+      "sha256": "e166f7d64b084331e427945bd3dedf5735309201c91e58606eb93656cc434608",
+      "transformation": "byte-identical copy",
+      "localization_parent_sha256": "e166f7d64b084331e427945bd3dedf5735309201c91e58606eb93656cc434608"
+    },
+    {
+      "path": "evidence/observation_example.npz",
+      "source_project_path": "experiments/worldgym_mvp_repair_8h_v1/demo_runs/20261015T190420_428354748_demo/policy_trace.npz",
+      "source_sha256": "7792e10439d64493cb9282e9681ea6d5555a37d15ecfdb040fb4509968912e73",
+      "sha256": "a1a242b354fe27dd75b5c83def43cc2e0a32ee8bc252af92ca2b1a65e1d602fa",
+      "transformation": "First policy call of fixed ACT40 demo seed1510150001: two RGB views, joint state, first50 issued controls. No final-set labels or log-prob placeholders.",
+      "localization_parent_sha256": "a1a242b354fe27dd75b5c83def43cc2e0a32ee8bc252af92ca2b1a65e1d602fa"
+    },
+    {
+      "path": "evidence/repair_diagnostics.json",
+      "source_project_path": "experiments/worldgym_mvp_repair_8h_v1/DIAGNOSTIC_SUMMARY.json",
+      "source_sha256": "5d6e910bd64ac8bbf8b48a605bd212232126a8cb60c184b6bec749de457e8b1e",
+      "sha256": "5d6e910bd64ac8bbf8b48a605bd212232126a8cb60c184b6bec749de457e8b1e",
+      "transformation": "byte-identical copy",
+      "localization_parent_sha256": "5d6e910bd64ac8bbf8b48a605bd212232126a8cb60c184b6bec749de457e8b1e"
+    },
+    {
+      "path": "evidence/gain_results.json",
+      "source_project_path": "experiments/worldgym_gain_12h_v1/RESULTS.json",
+      "sha256": "9909357ad27b6580f9259d047bbb57698dc72f3e466833737029ba67fc532ad0",
+      "source_sha256": "9909357ad27b6580f9259d047bbb57698dc72f3e466833737029ba67fc532ad0",
+      "transformation": "byte-identical copy",
+      "localization_parent_sha256": "9909357ad27b6580f9259d047bbb57698dc72f3e466833737029ba67fc532ad0"
+    },
+    {
+      "path": "media/figures/01_system.png",
+      "sha256": "f7d52f6dcf8324a666e56afd2f651dd3def127473c826dcaa1e48d2b0d71ea3f",
+      "source": "Existing executed briefing package; unchanged artifact bytes"
+    },
+    {
+      "path": "media/figures/02_results.png",
+      "sha256": "cc53f1e2e0636e17f164850e26db93f08809214ae7be23c81836fdb1ed2443a3",
+      "source": "Existing executed briefing package; unchanged artifact bytes"
+    },
+    {
+      "path": "media/figures/03_next_rl.png",
+      "sha256": "8b5533be3c742b191cd5a60b787ee132b2012db064e8420d83f660e8179c7dc4",
+      "source": "Existing executed briefing package; unchanged artifact bytes"
+    }
+  ],
+  "localization": "English sibling of the three-notebook briefing. Original evidence and Chinese materials remain untouched.",
+  "release_scope": "Three notebooks, archived evidence and portable GPU core. Weight assets are external; see Scripts/README.md.",
+  "archived_completion_summary": {
+    "gain": {
+      "status": "COMPLETE_VERIFIED",
+      "elapsed_seconds": 23922.403846025467,
+      "source_sha256": "203d9d61da51a7c9b2cbe06ecf71c8926ae08eb68be4a86aae826dc5b5870226"
+    },
+    "native": {
+      "status": "COMPLETE_VERIFIED",
+      "elapsed_seconds": 29049.725428581238,
+      "archived_checks": {
+        "training": "PASS_112_LIKELIHOOD_112_ADAM_PROBES",
+        "official_success": "PASS_500_MAIN_PLUS_8_TTT",
+        "artifact_review": "PASS_ASSISTANT_ARTIFACT_REVIEW"
+      },
+      "source_sha256": "93973b34abb98239c07c839796c304e9a3e3c6e1be0ed1199c73eefbcc03e640"
+    },
+    "repair": {
+      "status": "DELIVERED_VERIFIED_SCOPED_MVP",
+      "elapsed_seconds": 19100.748958587646,
+      "source_sha256": "60c6b0bd8eb66f2fb7a45890ab3beca9bc7843e989ec5d38b28d76dea7c202d9"
+    },
+    "scope": "Selected facts from archived delivery records; not a new training audit."
+  },
+  "release_notebook_verification": {
+    "status": "PASS",
+    "fresh_kernel_per_notebook": true,
+    "code_cells": 11,
+    "scope": "CPU archived arithmetic and notebook execution; no new policy inference."
+  }
+}

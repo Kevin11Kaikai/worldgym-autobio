@@ -1,0 +1,119 @@
+{
+  "experiment_status": "COMPLETE_VERIFIED",
+  "implementation_goal": "COMPLETED_COMPACT_ALGORITHM_LOOP",
+  "performance_gain_goal": "NOT_ESTABLISHED",
+  "successes_per_100": {
+    "SFT": 19,
+    "MuJoCo_GRPO": 13,
+    "native_GRPO": 13,
+    "native_continued": 23,
+    "Dyna_GRPO": 18
+  },
+  "paired_comparisons": {
+    "native_GRPO_minus_SFT": {
+      "n": 100,
+      "improvements": 6,
+      "new_failures": 12,
+      "paired_gain_pp": -6.0,
+      "bootstrap95_pp": [
+        -14.000000000000002,
+        2.0
+      ],
+      "exact_McNemar_p": 0.237884521484375
+    },
+    "MuJoCo_GRPO_minus_SFT": {
+      "n": 100,
+      "improvements": 6,
+      "new_failures": 12,
+      "paired_gain_pp": -6.0,
+      "bootstrap95_pp": [
+        -14.000000000000002,
+        2.0
+      ],
+      "exact_McNemar_p": 0.237884521484375
+    },
+    "native_GRPO_minus_MuJoCo_GRPO": {
+      "n": 100,
+      "improvements": 11,
+      "new_failures": 11,
+      "paired_gain_pp": 0.0,
+      "bootstrap95_pp": [
+        -9.0,
+        9.0
+      ],
+      "exact_McNemar_p": 1.0
+    },
+    "Dyna_GRPO_minus_native_continued": {
+      "n": 100,
+      "improvements": 11,
+      "new_failures": 16,
+      "paired_gain_pp": -5.0,
+      "bootstrap95_pp": [
+        -15.0,
+        5.0
+      ],
+      "exact_McNemar_p": 0.44206833839416504
+    },
+    "Dyna_GRPO_minus_SFT": {
+      "n": 100,
+      "improvements": 10,
+      "new_failures": 11,
+      "paired_gain_pp": -1.0,
+      "bootstrap95_pp": [
+        -10.0,
+        8.0
+      ],
+      "exact_McNemar_p": 1.0
+    },
+    "native_continued_minus_native_GRPO": {
+      "n": 100,
+      "improvements": 20,
+      "new_failures": 10,
+      "paired_gain_pp": 10.0,
+      "bootstrap95_pp": [
+        -1.0,
+        21.0
+      ],
+      "exact_McNemar_p": 0.09873714670538902
+    }
+  },
+  "ttt": {
+    "n": 4,
+    "base": 0,
+    "adapted": 0,
+    "paired": {
+      "n": 4,
+      "improvements": 0,
+      "new_failures": 0,
+      "paired_gain_pp": 0.0,
+      "bootstrap95_pp": [
+        0.0,
+        0.0
+      ],
+      "exact_McNemar_p": 1.0
+    },
+    "scope": "Exploratory4scene adaptation,not independent generalization evidence"
+  },
+  "scope_achieved": {
+    "native_WorldGym_future_observations": true,
+    "language_conditioned_full_SmolVLA_action_expert_GRPO_updates": true,
+    "genuine_task_domain_VLM_reward": true,
+    "Dyna_model_update_steps": 500,
+    "matched_Dyna_policy_comparison": true,
+    "initial_observation_only_TTT_scenes": 4,
+    "qualitative_language_and_synthetic_distractor_rollouts": 6
+  },
+  "numerical_checks": {
+    "training": "PASS_112_LIKELIHOOD_112_ADAM_PROBES",
+    "official_success": "PASS_500_MAIN_PLUS_8_TTT",
+    "artifact_review": "PASS_ASSISTANT_ARTIFACT_REVIEW"
+  },
+  "limitations": [
+    "Compact SmolVLA / Gaussian GRPO / local Qwen2.5VL7B adaptation, not exact OpenVLA-OFT/token-GRPO/GPT4o reproduction",
+    "One training seed and single MuJoCo task; no real-robot evidence",
+    "VLM task-domain calibration does not establish native-generated-image or conflicting-language reliability",
+    "Qualitative language/distractor support does not validate alternate-task physical success",
+    "Final outcomes not read until the full matrix was complete; no final-driven policy selection",
+    "TTT n=4 is exploratory; zero observed difference is not evidence of equivalence"
+  ]
+}

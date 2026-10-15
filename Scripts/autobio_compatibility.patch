@@ -1,0 +1,22 @@
+--- a/autobio/task.py
++++ b/autobio/task.py
+@@ -90,7 +90,7 @@
+ def get_task_class(name: str) -> type[Task]:
+     """Get the task class by name."""
+     if name == "pickup":
+-        from pickup import Pickup
++        from pickup_centrifuge_tube import Pickup
+         return Pickup
+     elif name == "thermal_cycler_close" or name == "thermal_cycler_open":
+         from mani_thermal_cycler import ThermalCyclerManipulate
+--- a/autobio/pickup_centrifuge_tube.py
++++ b/autobio/pickup_centrifuge_tube.py
+@@ -1,6 +1,7 @@
+ import numpy as np
+ import mujoco
+-mujoco.mj_loadPluginLibrary('./libmjlab.so.3.3.0')
++from pathlib import Path
++mujoco.mj_loadPluginLibrary(str(Path(__file__).resolve().parent / 'libmjlab.so.3.3.0'))
+ 
+ from kinematics import AlohaAnalyticalIK, Pose, slerp
+ from topp import Topp
