@@ -6,25 +6,35 @@ A compact research project for **understanding, evaluating and debugging world-m
 
 Native world-model RL has been executed. A reliable policy improvement attributable to WorldGym has **not** been established. All results concern one simulated task; there are no real-robot, wet-lab deployment or surgical results.
 
-## Read the project in 25 minutes
+## Three stages, three guided notebooks
 
-| Notebook | Core question | Time |
+Start with notebook 01, even if your main interest is RL. Each notebook opens with a **new panoramic teaching image**, followed by **five sections matching its numbered panels**. The lessons explain the input-to-output process before results, then discuss failures, repairs and what the next stage needs. They assume basic familiarity with training a model, without requiring robotics or RL background.
+
+| Notebook | Follow the process | Reading time |
 |---|---|---:|
-| [01 · Understand the MVP](01_understand_the_mvp.ipynb) | How do images, language and joint states produce actions? | 6 min |
-| [02 · Results and findings](02_results_and_findings.ipynb) | What improved, what failed, and which component deserves credit? | 10 min |
-| [03 · Next WorldGym RL](03_next_worldgym_rl.ipynb) | What should be fixed before another matched RL experiment? | 9 min |
+| [01 · ACT imitation learning](01_act_imitation_learning.ipynb) | Demonstrations → ACT action chunks → closed-loop MuJoCo testing | 15–20 min |
+| [02 · WorldGym policy evaluation](02_worldgym_policy_evaluation.ipynb) | Fixed ACT → predicted futures → scores and rankings → MuJoCo comparison | 15–20 min |
+| [03 · World-Gymnast-inspired RL](03_worldgymnast_reinforcement_learning.ipynb) | Native imagined trajectories → VLM rewards → actual policy updates → physical evaluation | ~20 min |
 
-Each notebook includes a new teaching illustration, saved outputs and short runnable analysis. The next experiment in notebook 03 remains **DRAFT / NOT EXECUTED**.
+Read the saved notebook outputs directly on GitHub, or run the short CPU cells. Code is optional for understanding. Stage 3 describes **completed RL experiments**; only its fifth section proposes a **DRAFT / NOT EXECUTED** next experiment.
 
-## Findings worth inspecting
+## Results, attached to the correct stage
 
-| Experiment | Result on its own 100-scene evaluation set | Interpretation |
+| Stage | Recorded evidence | What it establishes |
 |---|---|---|
-| ACT expansion and policy selection | Original ACT 78; WorldGym-selected candidate 94; strong no-WorldGym selector 93 | +16 points over the original, but the same fixed SFT candidate also scored 94. Unique WorldGym gain is unestablished. |
-| Native WorldGym RL | SmolVLA SFT 19; native GRPO 13; matched MuJoCo GRPO 13 | The native loop and actual updates worked; improved policy success was not demonstrated. |
-| SFT diagnosis and repair | Original SmolVLA SFT 19; development-selected continuation 53; strong ACT40 91 | +34 points [21, 47], with 44 improvements and 10 new failures. This is additional SFT, not an RL or WorldGym gain. |
+| 1 · ACT training | Repaired 10-demo ACT: 31/50; 80-demo ACT: 50/50 on shared test scenes | Usable simulated pickup policies under a matched training/execution setup; not real-robot reliability |
+| 2 · Policy evaluation | Hybrid evaluator: 18/20 non-tied policy pairs correctly ordered; 125/140 episode judgments correct | Useful task-specific hybrid evaluation; these are evaluator metrics, not a robot's pickup rate or native WorldGym fidelity |
+| 3 · Native model RL | SFT 19; native GRPO 13; matched MuJoCo GRPO 13; native continuation 23; Dyna 18, each /100 | Actual generated rollouts and policy updates ran; reliable RL gains were not established |
 
-The world-model repair reduced static-frame prediction MAE by about 33% against matched replay training on four new initial states, but worsened movement and reversed-gripper predictions. Reward repair reduced false positives while increasing false negatives. The notebooks preserve these negative results and their small-sample limitations. Intervals describe scene-paired uncertainty, not variation across training seeds.
+These are different evaluation batches. The notebooks show the denominators, comparators and limitations before interpreting any improvement.
+
+<details><summary>Later selection and repair experiments</summary>
+
+In a separate 100-scene ACT selection experiment, original ACT scored 78, the WorldGym-selected candidate 94 and the strong no-WorldGym selection 93. The fixed SFT candidate itself also scored 94, so a unique WorldGym gain remains unestablished.
+
+Another 100-scene SFT repair experiment improved SmolVLA from 19 to 53, with 44 improved scenes and ten new failures; strong ACT40 scored 91. This was additional SFT, not RL. World-model repair reduced stationary prediction MAE by about 33% versus matched replay on four new initial states, but worsened movement and reversed-gripper predictions. Reward repair reduced false positives while increasing false negatives. The later diagnostics are explained in Stage 3. Scene-paired intervals do not capture variation across training seeds.
+
+</details>
 
 ## Reproduce at the right level
 
@@ -67,6 +77,6 @@ tools/verify_notebooks.py          # CPU evidence / notebook checks
 
 Data, model weights, downloaded upstream repositories, run logs and personal outreach materials are excluded from Git. [SOURCE_MANIFEST.json](SOURCE_MANIFEST.json) identifies the bundled evidence; [Scripts/SOURCE_PROVENANCE.json](Scripts/SOURCE_PROVENANCE.json) records the original implementation sources and portability changes.
 
-The compact native implementation uses SmolVLA, a Gaussian policy over flow-derived action means, and a locally adapted Qwen VLM reward. It is an explicit resource adaptation of the World-Gymnast idea, not the original large-scale OpenVLA/token-GRPO reproduction. Full historical Dyna/TTT orchestration and the old hybrid candidate-bank campaign are not included in this focused script release; their saved evidence remains in notebook 02.
+The compact native implementation uses SmolVLA, a Gaussian policy over flow-derived action means, and a locally adapted Qwen VLM reward. It is an explicit resource adaptation of the World-Gymnast idea, not the original large-scale OpenVLA/token-GRPO reproduction. Full historical Dyna/TTT orchestration and the old hybrid candidate-bank campaign are not included in this focused script release; their saved evidence is explained in notebooks 02 and 03.
 
 Upstream projects and teaching-image attribution are listed in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).

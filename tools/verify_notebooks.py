@@ -9,10 +9,11 @@ for key,sub in [('IPYTHONDIR','ipython'),('JUPYTER_CONFIG_DIR','jupyter_config')
     p=R/'outputs/_runtime'/sub;p.mkdir(parents=True,exist_ok=True);os.environ[key]=str(p)
 import nbformat
 from nbclient import NotebookClient
-from briefing_utils import verify_assets,outcomes,data
+from briefing_utils import verify_assets,outcomes,data,check_stage_evidence
 
 def main():
     count=verify_assets()
+    stages=check_stage_evidence()
     gain,native,repair=[outcomes(k) for k in ['gain','native','repair']]
     assert gain.sum().to_dict()==data('gain_summary.json')['final_successes']
     assert native.sum().to_dict()==data('native_summary.json')['successes_per_100']
@@ -24,7 +25,8 @@ def main():
     for k,r in data('native_summary.json')['paired_comparisons'].items():
         a,b=k.split('_minus_');d=native[a]-native[b]
         assert (round(d.mean()*100),int((d==1).sum()),int((d==-1).sum()))==(round(r['paired_gain_pp']),r['improvements'],r['new_failures'])
-    files=sorted(R.glob('*.ipynb'));assert len(files)==3
+    files=sorted(R.glob('*.ipynb'))
+    assert [p.name for p in files]==['01_act_imitation_learning.ipynb','02_worldgym_policy_evaluation.ipynb','03_worldgymnast_reinforcement_learning.ipynb']
     result=[]
     for p in files:
         nb=nbformat.read(p,as_version=4);t=time.perf_counter()
@@ -38,6 +40,7 @@ def main():
         result.append(dict(notebook=p.name,code_cells=len(cells),seconds=time.perf_counter()-t,status='PASS'))
         print(p.name+': PASS',flush=True)
     report=dict(status='PASS',assets_checked=count,fresh_kernel_per_notebook=True,notebooks=result,
+                historical_stage_evidence=stages,
                 scope='Archived outcome arithmetic and fresh notebook execution; no new policy inference.')
     (R/'outputs/NOTEBOOK_CHECK.json').write_text(json.dumps(report,indent=2),encoding='utf-8')
 if __name__=='__main__':main()

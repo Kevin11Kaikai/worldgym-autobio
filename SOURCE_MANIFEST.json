@@ -73,38 +73,6 @@
     },
     {
       "path": "media/demos/policy_improvement.mp4",
-      "source_project_path": "experiments/worldgym_mvp_repair_8h_v1/illustrations/comparison_1_gain_keyframes.png",
-      "source_sha256": "b9bd69e0998ca2b91ee51324e958a43cbcc60d961fe37d301f6f85b151ccb874",
-      "sha256": "b7fb978b80c0ae1a7356fb0c5637691e2b53deacca307a07a0f20bb15a40f531",
-      "transformation": "byte-identical copy",
-      "localization_parent_sha256": "b9bd69e0998ca2b91ee51324e958a43cbcc60d961fe37d301f6f85b151ccb874"
-    },
-    {
-      "path": "media/demos/policy_regression.mp4",
-      "source_project_path": "experiments/worldgym_mvp_repair_8h_v1/illustrations/comparison_1_harm_keyframes.png",
-      "source_sha256": "3206f7f9ecaced1108e654913946f7a7f4fe7e15337f0ec11bf03596687837f3",
-      "sha256": "00b5f11b7b8abd75dae3adb956a69a22b1523c97fcf3b5792782c26a0f503146",
-      "transformation": "byte-identical copy",
-      "localization_parent_sha256": "3206f7f9ecaced1108e654913946f7a7f4fe7e15337f0ec11bf03596687837f3"
-    },
-    {
-      "path": "media/demos/world_model_static.mp4",
-      "source_project_path": "experiments/worldgym_mvp_repair_8h_v1/illustrations/wm_fresh_1374421543_hold_initial_keyframes.png",
-      "source_sha256": "ba9008da1e48b2c21f65414a7b195ac489aeabd3e75fc453d1c524d61031a808",
-      "sha256": "fcd800bbaf4037e0a487adb52172bbe3dcb7adc66d890c584e0487a715633d0b",
-      "transformation": "byte-identical copy",
-      "localization_parent_sha256": "ba9008da1e48b2c21f65414a7b195ac489aeabd3e75fc453d1c524d61031a808"
-    },
-    {
-      "path": "media/demos/world_model_motion.mp4",
-      "source_project_path": "experiments/worldgym_mvp_repair_8h_v1/illustrations/wm_fresh_1374421543_policy_replay_keyframes.png",
-      "source_sha256": "0b4cb77ca36e792b02cf7cb89f1b25acc0d888bd2ae0d6403da315e63c03355f",
-      "sha256": "e166f7d64b084331e427945bd3dedf5735309201c91e58606eb93656cc434608",
-      "transformation": "byte-identical copy",
-      "localization_parent_sha256": "0b4cb77ca36e792b02cf7cb89f1b25acc0d888bd2ae0d6403da315e63c03355f"
-    },
-    {
-      "path": "media/demos/policy_improvement.mp4",
       "source_project_path": "experiments/worldgym_mvp_repair_8h_v1/illustrations/comparison_1_gain.mp4",
       "source_sha256": "b7fb978b80c0ae1a7356fb0c5637691e2b53deacca307a07a0f20bb15a40f531",
       "sha256": "b7fb978b80c0ae1a7356fb0c5637691e2b53deacca307a07a0f20bb15a40f531",
@@ -161,21 +129,41 @@
     },
     {
       "path": "media/figures/01_system.png",
-      "sha256": "f7d52f6dcf8324a666e56afd2f651dd3def127473c826dcaa1e48d2b0d71ea3f",
-      "source": "Existing executed briefing package; unchanged artifact bytes"
+      "sha256": "bcc286a087bd720366d140f61fd14382468ce2dde790fdd0f7c7724e4dbbdc23",
+      "source": "New built-in imagegen teaching schematic, 2026-10-16; not an experiment screenshot."
     },
     {
       "path": "media/figures/02_results.png",
-      "sha256": "cc53f1e2e0636e17f164850e26db93f08809214ae7be23c81836fdb1ed2443a3",
-      "source": "Existing executed briefing package; unchanged artifact bytes"
+      "sha256": "f96a81ba34bfc4b7043bddb5a25dc2090668fb4cdfaaf21b02ca2c0671aa522f",
+      "source": "New built-in imagegen teaching schematic, 2026-10-16; not an experiment screenshot."
     },
     {
       "path": "media/figures/03_next_rl.png",
-      "sha256": "8b5533be3c742b191cd5a60b787ee132b2012db064e8420d83f660e8179c7dc4",
-      "source": "Existing executed briefing package; unchanged artifact bytes"
+      "sha256": "b0df4abe2f1d17e7f5fb018132298dd95425718eb0d112de706b8871af42c541",
+      "source": "New built-in imagegen teaching schematic, 2026-10-16; not an experiment screenshot."
+    },
+    {
+      "path": "evidence/phase1_summary.json",
+      "sha256": "bcae3fcf5126f93d18a838b7d7b0b47c30b714e3e3375e90ecdbf002ce66aa94",
+      "transformation": "Deterministic compact extraction from frozen artifacts; provenance in the corresponding phase summary."
+    },
+    {
+      "path": "evidence/phase1_outcomes.csv",
+      "sha256": "0a325695d8968636d2b0b2609bfd05026910de63246dd3e881c46b67eac3fe77",
+      "transformation": "Deterministic compact extraction from frozen artifacts; provenance in the corresponding phase summary."
+    },
+    {
+      "path": "evidence/phase2_summary.json",
+      "sha256": "90ace74f9dc204fc8c35a2e61f51ca05462b8bcadc25b4bd7b2618e8d0c3daa8",
+      "transformation": "Deterministic compact extraction from frozen artifacts; provenance in the corresponding phase summary."
+    },
+    {
+      "path": "evidence/phase2_outcomes.csv",
+      "sha256": "2d2e8aa07e534531b1ba449d102616e73bdb5cc5d2f19126cd3a3cf3a68fc8cf",
+      "transformation": "Deterministic compact extraction from frozen artifacts; provenance in the corresponding phase summary."
     }
   ],
-  "localization": "English sibling of the three-notebook briefing. Original evidence and Chinese materials remain untouched.",
+  "localization": "English edition of the same three stage-based lessons; original experimental evidence remains immutable.",
   "release_scope": "Three notebooks, archived evidence and portable GPU core. Weight assets are external; see Scripts/README.md.",
   "archived_completion_summary": {
     "gain": {
@@ -202,8 +190,25 @@
   },
   "release_notebook_verification": {
     "status": "PASS",
+    "revision_date": "2026-10-16",
     "fresh_kernel_per_notebook": true,
-    "code_cells": 11,
-    "scope": "CPU archived arithmetic and notebook execution; no new policy inference."
+    "code_cells": 8,
+    "historical_stage_evidence": {
+      "phase1_paired_scenes": 50,
+      "phase2_paired_scenes": 20,
+      "status": "PASS_SAVED_OUTCOME_ARITHMETIC",
+      "new_inference": false
+    },
+    "scope": "Archived outcome arithmetic and fresh notebook execution; no new policy inference."
+  },
+  "teaching_revision": {
+    "date": "2026-10-16",
+    "structure": "One notebook per historical MVP stage, five image panels mirrored by five sections.",
+    "new_experiments": false,
+    "notebooks": [
+      "01_act_imitation_learning.ipynb",
+      "02_worldgym_policy_evaluation.ipynb",
+      "03_worldgymnast_reinforcement_learning.ipynb"
+    ]
   }
 }

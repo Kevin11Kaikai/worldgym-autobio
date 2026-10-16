@@ -1,0 +1,246 @@
+{
+  "scope": "Archived frozen hybrid evaluator; native generation is a separate route.",
+  "main": {
+    "episodes": 140,
+    "policies": 7,
+    "scenes_per_policy": 20,
+    "correct_pairs": 18,
+    "non_tied_pairs": 20,
+    "spearman": 0.9189562119494703,
+    "classification": {
+      "episodes": 140,
+      "successes": 70,
+      "AUROC": 0.9443877551020409,
+      "Brier": 0.08441474644334616,
+      "accuracy": 0.8928571428571429,
+      "false_positive_rate": 0.14285714285714285,
+      "false_negative_rate": 0.07142857142857142,
+      "TP": 65,
+      "TN": 60,
+      "FP": 10,
+      "FN": 5
+    },
+    "policy_probability_MAE": 0.05659793475794973,
+    "policy_rows": [
+      {
+        "model": "86191aa6",
+        "actual_successes": 0,
+        "actual_rate": 0.0,
+        "predicted_mean_success_probability": 0.10035877764959189,
+        "predicted_success_fraction": 0.1
+      },
+      {
+        "model": "f12ea971",
+        "actual_successes": 0,
+        "actual_rate": 0.0,
+        "predicted_mean_success_probability": 0.03636038355452973,
+        "predicted_success_fraction": 0.0
+      },
+      {
+        "model": "c24fbea8",
+        "actual_successes": 20,
+        "actual_rate": 1.0,
+        "predicted_mean_success_probability": 0.9619449938248739,
+        "predicted_success_fraction": 1.0
+      },
+      {
+        "model": "ea4310c7",
+        "actual_successes": 11,
+        "actual_rate": 0.55,
+        "predicted_mean_success_probability": 0.5821467847032539,
+        "predicted_success_fraction": 0.6
+      },
+      {
+        "model": "c6ebfff0",
+        "actual_successes": 12,
+        "actual_rate": 0.6,
+        "predicted_mean_success_probability": 0.5488117011502129,
+        "predicted_success_fraction": 0.55
+      },
+      {
+        "model": "ef31caa8",
+        "actual_successes": 13,
+        "actual_rate": 0.65,
+        "predicted_mean_success_probability": 0.7403520771799693,
+        "predicted_success_fraction": 0.8
+      },
+      {
+        "model": "fbd1aed0",
+        "actual_successes": 14,
+        "actual_rate": 0.7,
+        "predicted_mean_success_probability": 0.6522757848066097,
+        "predicted_success_fraction": 0.7
+      }
+    ]
+  },
+  "matched_no_worldgym_visual": {
+    "episodes": 140,
+    "policies": 7,
+    "scenes_per_policy": 20,
+    "correct_pairs": 18,
+    "non_tied_pairs": 20,
+    "spearman": 0.8829187134416479,
+    "classification": {
+      "episodes": 140,
+      "successes": 70,
+      "AUROC": 0.9248979591836735,
+      "Brier": 0.10817655575146247,
+      "accuracy": 0.8785714285714286,
+      "false_positive_rate": 0.15714285714285714,
+      "false_negative_rate": 0.08571428571428572,
+      "TP": 64,
+      "TN": 59,
+      "FP": 11,
+      "FN": 6
+    },
+    "policy_probability_MAE": 0.12693754945873734,
+    "policy_rows": [
+      {
+        "model": "86191aa6",
+        "actual_successes": 0,
+        "actual_rate": 0.0,
+        "predicted_mean_success_probability": 0.2542711599717819,
+        "predicted_success_fraction": 0.15
+      },
+      {
+        "model": "f12ea971",
+        "actual_successes": 0,
+        "actual_rate": 0.0,
+        "predicted_mean_success_probability": 0.27977951208464547,
+        "predicted_success_fraction": 0.1
+      },
+      {
+        "model": "c24fbea8",
+        "actual_successes": 20,
+        "actual_rate": 1.0,
+        "predicted_mean_success_probability": 0.889193747383095,
+        "predicted_success_fraction": 0.9
+      },
+      {
+        "model": "ea4310c7",
+        "actual_successes": 11,
+        "actual_rate": 0.55,
+        "predicted_mean_success_probability": 0.6822128177060478,
+        "predicted_success_fraction": 0.65
+      },
+      {
+        "model": "c6ebfff0",
+        "actual_successes": 12,
+        "actual_rate": 0.6,
+        "predicted_mean_success_probability": 0.6459416746962906,
+        "predicted_success_fraction": 0.6
+      },
+      {
+        "model": "ef31caa8",
+        "actual_successes": 13,
+        "actual_rate": 0.65,
+        "predicted_mean_success_probability": 0.6496228093268217,
+        "predicted_success_fraction": 0.6
+      },
+      {
+        "model": "fbd1aed0",
+        "actual_successes": 14,
+        "actual_rate": 0.7,
+        "predicted_mean_success_probability": 0.7651742384623124,
+        "predicted_success_fraction": 0.75
+      }
+    ]
+  },
+  "confirmation": {
+    "episodes": 140,
+    "policies": 7,
+    "scenes_per_policy": 20,
+    "correct_pairs": 19,
+    "non_tied_pairs": 19,
+    "spearman": 0.981980506061966,
+    "classification": {
+      "episodes": 140,
+      "successes": 61,
+      "AUROC": 0.9646192156048973,
+      "Brier": 0.049969483141462545,
+      "accuracy": 0.9428571428571428,
+      "false_positive_rate": 0.06329113924050633,
+      "false_negative_rate": 0.04918032786885246,
+      "TP": 58,
+      "TN": 74,
+      "FP": 5,
+      "FN": 3
+    },
+    "policy_probability_MAE": 0.03304372505088,
+    "policy_rows": [
+      {
+        "model": "86191aa6",
+        "actual_successes": 0,
+        "actual_rate": 0.0,
+        "predicted_mean_success_probability": 0.012967787874254122,
+        "predicted_success_fraction": 0.0
+      },
+      {
+        "model": "f12ea971",
+        "actual_successes": 0,
+        "actual_rate": 0.0,
+        "predicted_mean_success_probability": 0.027189456790107803,
+        "predicted_success_fraction": 0.0
+      },
+      {
+        "model": "c24fbea8",
+        "actual_successes": 20,
+        "actual_rate": 1.0,
+        "predicted_mean_success_probability": 0.9159333572641396,
+        "predicted_success_fraction": 0.95
+      },
+      {
+        "model": "ea4310c7",
+        "actual_successes": 9,
+        "actual_rate": 0.45,
+        "predicted_mean_success_probability": 0.456692642646202,
+        "predicted_success_fraction": 0.45
+      },
+      {
+        "model": "c6ebfff0",
+        "actual_successes": 10,
+        "actual_rate": 0.5,
+        "predicted_mean_success_probability": 0.5046016817735907,
+        "predicted_success_fraction": 0.5
+      },
+      {
+        "model": "ef31caa8",
+        "actual_successes": 11,
+        "actual_rate": 0.55,
+        "predicted_mean_success_probability": 0.5821056267470147,
+        "predicted_success_fraction": 0.6
+      },
+      {
+        "model": "fbd1aed0",
+        "actual_successes": 11,
+        "actual_rate": 0.55,
+        "predicted_mean_success_probability": 0.6136822367891304,
+        "predicted_success_fraction": 0.65
+      }
+    ]
+  },
+  "classification_threshold": 0.5,
+  "sources": [
+    {
+      "source_project_path": "experiments/worldgym_v5_policy_ranking_12h/metrics/closed_final_structuredV2_WorldGym_visual_calibrated_comparison.json",
+      "source_sha256": "366bbd4ff95aeae26e7eaaa913dd61453efe382cc371df6da7ce8a9daf24a3ee"
+    },
+    {
+      "source_project_path": "experiments/worldgym_v5_policy_ranking_12h/metrics/closed_final_structuredV2_noWorldGym_visual_calibrated_comparison.json",
+      "source_sha256": "a7a5a5faf9e092a2a02ac1a5c024278a2b4ffea3b55279f42a06871cf9205ce6"
+    },
+    {
+      "source_project_path": "experiments/worldgym_v5_policy_ranking_12h/metrics/fresh_closed_final_episodes.jsonl",
+      "source_sha256": "d16e2930b16aa59daa51daa1f46540db0cb37c6c25836427efa91ff2029bef22"
+    },
+    {
+      "source_project_path": "experiments/worldgym_v5_policy_ranking_12h/metrics/closed_confirmation_structuredV2_WorldGym_visual_calibrated_comparison.json",
+      "source_sha256": "573dcb866bcf052caacbeec637c548077e647f355f5ff647a40ca68d09d3f837"
+    }
+  ],
+  "limits": [
+    "Native RGB physical fidelity is not established by hybrid ranking.",
+    "Matched heads/data, but total pretrained capacity and compute differ.",
+    "Confirmation summary is archived; only the main 140 episode rows are included for fresh arithmetic checks."
+  ]
+}
